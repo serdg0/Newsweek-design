@@ -7,18 +7,46 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./Assets/style.css">
+  <script src="https://kit.fontawesome.com/9694bc7f86.js"></script>
   <title>Newsweek</title>
 </head>
 
 <body>
-  <header class="bg-danger">
-    header
-    <nav class="nav">nav</nav>
+  <header class="d-flex align-items-center justify-content-between">
+    <span class="text-white align-text-bottom">Mon, Jul 01, 2019</span>
+    <img src="./Assets/Screenshot from 2019-07-01 14-52-43.png" alt="newsweek">
+    <div><a class="btn-link text-white" href="#">Sign In</a>
+    <button type="button" class="btn-lg btn-link bg-white text-danger rounded-0">Subscribe</button></div>
   </header>
+    <nav class="nav nav-fill navbar-expand-md bg-white d-flex justify-content-between">
+      <a href="#" class="nav-link text-body border-left">U.S</a>
+      <a href="#" class="nav-link text-body border-left">World</a>
+      <a href="#" class="nav-link text-body border-left">Business</a>
+      <a href="#" class="nav-link text-body border-left">Tech & Science</a>
+      <a href="#" class="nav-link text-body border-left">Culture</a>
+      <a href="#" class="nav-link text-body border-left">Sports</a>
+      <a href="#" class="nav-link text-body border-left">Health</a>
+      <a href="#" class="nav-link text-body border-left">Opinion</a>
+      <form action="search">
+        <input class="form-control-sm" type="text" name="Search" id="">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+      </form> 
+    </nav>
+  
   <main class="container-fluid row">
-    <div class="col order-2">
+    <div class="col-6 order-2">
       <section class="content col">
-        top story
+        <h6 class="text-uppercase text-secondary">top story</h6>
+        <figure class="border-bottom">
+          <div class="position-relative"><img class="position-relative" src="./Assets/topstory.jpg" alt="top story">
+          <a class="btn bg-white position-absolute text-danger" href="#">U.S.</a></div>
+          <figcaption>
+            <h5 class=" text-capitalize">How harvard caved to students and fired its first black faculty dean</h5>
+            <p class="text-justify">Ron Sullivan talked to Newsweek about defending Harvey Weinstein and how "the loudest voices in the room" intimidated Harvard leaders and cost him his job.</p>
+          </figcaption>
+        </figure>
+        <h6 class="border-bottom font-weight-bold">Lawyer Association Opposes Harvard Ousting Weinstein Lawyer</h6>
+        <h6 class="border-bottom font-weight-bold">Majority of College Students Believe Racist Comments Warrant Admission Being Rescinded</h6>
       </section>
       <section class="content col">
         <article class="row">
@@ -47,7 +75,7 @@
         </article>
       </section>
     </div>
-    <section class="content col order-1">
+    <section class="content col-3 order-1">
       <article class="row">
         <div class="col">featured story</div>
       </article>
@@ -67,7 +95,7 @@
         <div class="col">featured story</div>
       </article>
     </section>
-    <aside class="col order-3">
+    <aside class="col-3 order-3">
       <section class="content col">
         <article class="row">
           <div class="col">an opinion</div>
@@ -115,42 +143,42 @@
   </main>
   <section class="container-fluid">
     <div class="row">
-      <article class="col">in the magazine</article>
-      <article class="col">in the magazine</article>
-      <article class="col">in the magazine</article>
-      <article class="col">in the magazine</article>
+      <article class="col-3">in the magazine</article>
+      <article class="col-3">in the magazine</article>
+      <article class="col-3">in the magazine</article>
+      <article class="col-3">in the magazine</article>
     </div>
     <div class="row">
-      <article class="col">in the magazine</article>
-      <article class="col">in the magazine</article>
-      <article class="col">in the magazine</article>
-      <article class="col">in the magazine</article>
-    </div>
-  </section>
-  <section class="container-fluid">
-    <div class="row">
-      <article class="col">Editor's pick</article>
-      <article class="col">Editor's pick</article>
-      <article class="col">Editor's pick</article>
-      <article class="col">Editor's pick</article>
-    </div>
-    <div class="row">
-      <article class="col">Editor's pick</article>
-      <article class="col">Editor's pick</article>
-      <article class="col">Editor's pick</article>
-      <article class="col">Editor's pick</article>
+      <article class="col-3">in the magazine</article>
+      <article class="col-3">in the magazine</article>
+      <article class="col-3">in the magazine</article>
+      <article class="col-3">in the magazine</article>
     </div>
   </section>
   <section class="container-fluid">
     <div class="row">
-      <article class="col">featured slideshow</article>
-      <article class="col">featured slideshow</article>
-      <article class="col">featured slideshow</article>
+      <article class="col-3">Editor's pick</article>
+      <article class="col-3">Editor's pick</article>
+      <article class="col-3">Editor's pick</article>
+      <article class="col-3">Editor's pick</article>
     </div>
     <div class="row">
-      <article class="col">featured slideshow</article>
-      <article class="col">featured slideshow</article>
-      <article class="col">featured slideshow</article>
+      <article class="col-3">Editor's pick</article>
+      <article class="col-3">Editor's pick</article>
+      <article class="col-3">Editor's pick</article>
+      <article class="col-3">Editor's pick</article>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <article class="col-4">featured slideshow</article>
+      <article class="col-4">featured slideshow</article>
+      <article class="col-4">featured slideshow</article>
+    </div>
+    <div class="row">
+      <article class="col-4">featured slideshow</article>
+      <article class="col-4">featured slideshow</article>
+      <article class="col-4">featured slideshow</article>
     </div>
   </section>
   <section class="container-fluid">
