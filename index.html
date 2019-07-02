@@ -8,6 +8,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./Assets/style.css">
   <script src="https://kit.fontawesome.com/9694bc7f86.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <title>Newsweek</title>
 </head>
 
@@ -16,40 +17,41 @@
     <span class="text-white align-text-bottom">Mon, Jul 01, 2019</span>
     <img src="./Assets/Screenshot from 2019-07-01 14-52-43.png" alt="newsweek">
     <div><a class="btn-link text-white" href="#">Sign In</a>
-    <button type="button" class="btn-lg btn-link bg-white text-danger rounded-0">Subscribe</button></div>
+    <button type="button" class="btn-lg btn-link bg-white text-danger rounded-0 border-0">Subscribe</button></div>
   </header>
     <nav class="nav nav-fill navbar-expand-md bg-white d-flex justify-content-between">
-      <a href="#" class="nav-link text-body border-left">U.S</a>
-      <a href="#" class="nav-link text-body border-left">World</a>
-      <a href="#" class="nav-link text-body border-left">Business</a>
-      <a href="#" class="nav-link text-body border-left">Tech & Science</a>
-      <a href="#" class="nav-link text-body border-left">Culture</a>
-      <a href="#" class="nav-link text-body border-left">Sports</a>
-      <a href="#" class="nav-link text-body border-left">Health</a>
-      <a href="#" class="nav-link text-body border-left">Opinion</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">U.S</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">World</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">Business</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">Tech & Science</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">Culture</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">Sports</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">Health</a>
+      <a href="#" class="nav-link text-black border-left font-weight-bold">Opinion</a>
       <form action="search">
-        <input class="form-control-sm" type="text" name="Search" id="">
+        <input class="form-control-sm border-0" type="text" name="Search" id="">
         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
       </form> 
     </nav>
   
-  <main class="container-fluid row">
-    <div class="col-6 order-2">
+  <main class="container-fluid row pt-2">
+    <div class="col-6 order-2 sticky-top">
       <section class="content col">
-        <h6 class="text-uppercase text-secondary">top story</h6>
+        <h6 class="text-uppercase text-secondary roboto">top story</h6>
         <figure class="border-bottom">
-          <div class="position-relative"><img class="position-relative" src="./Assets/topstory.jpg" alt="top story">
-          <a class="btn bg-white position-absolute text-danger" href="#">U.S.</a></div>
+          <div class="position-relative"><img class="img-fluid" src="./Assets/topstory.jpg" alt="top story">
+          <a class="bg-light font-weight-bold rounded-0 position-absolute link-onimg" href="#">U.S.</a></div>
           <figcaption>
-            <h5 class=" text-capitalize">How harvard caved to students and fired its first black faculty dean</h5>
+            <h5 class="text-capitalize font-weight-bold text-black">How harvard caved to students and fired its first black faculty dean</h5>
             <p class="text-justify">Ron Sullivan talked to Newsweek about defending Harvey Weinstein and how "the loudest voices in the room" intimidated Harvard leaders and cost him his job.</p>
           </figcaption>
         </figure>
-        <h6 class="border-bottom font-weight-bold">Lawyer Association Opposes Harvard Ousting Weinstein Lawyer</h6>
-        <h6 class="border-bottom font-weight-bold">Majority of College Students Believe Racist Comments Warrant Admission Being Rescinded</h6>
+        <h6 class="border-bottom font-weight-bold py-2 text-black">Lawyer Association Opposes Harvard Ousting Weinstein Lawyer</h6>
+        <h6 class="border-bottom font-weight-bold py-2 text-black">Majority of College Students Believe Racist Comments Warrant Admission Being Rescinded</h6>
       </section>
-      <section class="content col">
-        <article class="row">
+      <section class="content col sticky-top">
+          <h6 class="text-uppercase text-secondary roboto">more stories</h6>
+        <article class="row border-top">
           <div class="col">more stories</div>
         </article>
         <article class="row">
@@ -77,22 +79,63 @@
     </div>
     <section class="content col-3 order-1">
       <article class="row">
-        <div class="col">featured story</div>
+        <div class="col">
+          <h6 class="text-uppercase text-muted roboto">featured stories</h6>
+          <div class="position-relative"><img class="img-fluid" src="./Assets/featured_story.png" alt="featured story">
+            <a class="link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">analysis</a></div>
+          <h5 class="text-black font-weight-bold">Best Business Tools 2019</h5>
+          <p class="text-justify">Working with Statista Inc., the globally recognized data research company, Newsweek has
+            produced an authoritative list of America's Best Business Tools.</p>
+        </div>
       </article>
       <article class="row">
-        <div class="col">featured story</div>
+        <div class="col border-bottom">
+          <div class="position-relative"><img class="img-fluid" src="./Assets/adude.jpg" alt="featured story">
+            <a class="link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">politics</a></div>
+          <h5 class="text-black font-weight-bold">Republican Lindsey Graham Touts Kamala Harris, Joe Biden as 2020 Candidates</h5>
+          <p class="text-justify">Senator Lindsey Graham acknowledged former Vice President Joe Biden's longtime political clout, but he reiterated that California Senator Kamala Harris is "a force to be reckoned with."</p>
+        </div>
+        <div>
+          <h6 class="border-bottom font-weight-bold text-justify text-black py-3">Majority of College Students Believe Racist Comments Warrant Admission Being Rescinded</h6>
+        </div>
+        <h6 class="border-bottom font-weight-bold text-justify text-black py-3">Majority of College Students Believe Racist Comments Warrant Admission Being Rescinded</h6>
       </article>
       <article class="row">
-        <div class="col">featured story</div>
+        <div class="col border-bottom">
+          <div class="position-relative"><img class="img-fluid" src="./Assets/lol.jpg" alt="featured story">
+            <a class="link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">world</a></div>
+          <h5 class="text-black font-weight-bold">Former Intelligence Chief Denies Trump Claim Obama 'Begged' for Kim Meeting</h5>
+          <p class="text-justify">"That's news to me," said James Clapper.</p>
+        </div>
+        <h6 class="border-bottom font-weight-bold text-justify text-black py-3">Trump Meeting with North Korea's Kim Jong-Un Prompts Divided Reactions</h6>
+        <h6 class="border-bottom font-weight-bold text-justify text-black py-3">Donald Trump Shares Awkward Three-Way Fist Bump With Abe and Modi</h6>
       </article>
       <article class="row">
-        <div class="col">featured story</div>
+        <div class="col border-bottom">
+          <div class="position-relative"><img class="img-fluid" src="./Assets/bidenlolz.png" alt="featured story">
+            <a class="link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">politics</a></div>
+          <h5 class="text-black font-weight-bold">Fake Biden Campaign Website Being Run Secretly By Trump Campaign Operative</h5>
+          <p class="text-justify">Only a tiny disclaimer at the bottom of the site reveals its purpose as a form of "entertainment and political commentary."</p>
+        </div>
+        <h6 class="border-bottom font-weight-bold text-justify text-black py-3">Biden Fights Criticism of His Record: 'We Shouldn't Be Talking About the Past'</h6>
+        <h6 class="border-bottom font-weight-bold text-justify text-black py-3">Meghan McCain Defends Joe Biden, Accuses Eric Swalwell of Using 'Ageist Crap' to Attack Democratic Frontrunner</h6>
       </article>
-      <article class="row">
-        <div class="col">featured story</div>
+      <article class="row pb-5">
+          <div class="col card">
+              <div class="position-relative"><img class="img-fluid" src="./Assets/liechtenstein-image.jpg" alt="featured story">
+                <a class="link-onimg rounded-0 position-absolute bg-light font-weight-bold text-info" href="#">sponsored insight</a></div>
+              <div class="card-body"><h5 class="text-black font-weight-bold">Liechtenstein: Simply Innovative</h5>
+              <p class="text-justify">As Liechtenstein celebrates its 300th anniversary, discover how the prosperous Alpine country at the heart of Europe is embracing innovation in industry, finance and other diverse sectors.</p></div>
+            </div>
       </article>
-      <article class="row">
-        <div class="col">featured story</div>
+      <article class="row pb-5">
+        <div class="col card">
+          <div class="position-relative"><img class="img-fluid" src="./Assets/global-business-schools.jpg" alt="featured story">
+            <a class="link-onimg rounded-0 position-absolute bg-light font-weight-bold text-info" href="#">sponsored insight</a></div>
+          <div class="card-body"><h5 class="text-black font-weight-bold">What are the leading global business schools of 2019?</h5>
+          <p class="text-justify">Working with Statista Inc., the globally recognized data research company, Newsweek has
+          produced an authoritative list of America's Best Business Tools.</p></div>
+        </div>
       </article>
     </section>
     <aside class="col-3 order-3">

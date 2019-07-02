@@ -1,3 +1,21 @@
 header{
     background-color: #f72210;      
 }
+.link-onimg{
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    color: #f72210;
+}
+.text-black{
+    color: black;
+}
+h5:hover{
+    text-decoration: underline #f72210;
+}
+h6:hover{
+    color: #f72210;
+}
+.roboto{
+    font-family: 'Roboto Condensed', sans-serif;
+}
