@@ -16,6 +16,9 @@ h5:hover{
 h6:hover{
     color: #f72210;
 }
-.roboto{
+.signup-card{
+    background-color: #f4f5f6;
+}
+*{
     font-family: 'Roboto Condensed', sans-serif;
 }
