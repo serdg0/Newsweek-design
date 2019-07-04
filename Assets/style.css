@@ -16,8 +16,21 @@ h5:hover{
 h6:hover{
     color: #f72210;
 }
+.bg-orange{
+    background: #f72210;
+}
+.text-orange{
+    color: #f72210;
+}
+.hover-feat:hover{
+    background: #8a8b8b;
+}
 .signup-card{
     background-color: #f4f5f6;
+}
+.bg-slideshow{
+    background: url(./numeritos.png) no-repeat;
+    background-size: contain;
 }
 *{
     font-family: 'Roboto Condensed', sans-serif;
