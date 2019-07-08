@@ -1,6 +1,6 @@
 # Newsweek Page Clone Website
 
-This repository contains a clone system of the Mint Signup Page [Website](https://www.newsweek.com/)
+This repository contains a clone system of the Newsweek homepage: [Website](https://www.newsweek.com/)
 Used:
 
 * HTML
