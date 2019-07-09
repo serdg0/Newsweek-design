@@ -6,21 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Assets/style.css">
+  <link rel="stylesheet" href="./Style/style.css">
   <script src="https://kit.fontawesome.com/9694bc7f86.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <title>Newsweek</title>
 </head>
 
 <body>
-  <header class="d-flex align-items-center justify-content-between pt-2">
-    <span class="text-white align-text-bottom pl-3">Mon, Jul 01, 2019</span>
-    <img src="./Assets/Screenshot from 2019-07-01 14-52-43.png" alt="newsweek">
-    <div class="pr-3"><a class="btn-link text-white font-weight-bold" href="#">Sign In</a>
-    <button type="button" class="btn-sm btn-link bg-white text-danger rounded-0 border-0">Subscribe<i class="fas fa-chevron-right"></i></button></div>
+  <header class="container-fluid d-flex align-items-center justify-content-between pt-2">
+    <span class="nodisplay text-white align-text-bottom pl-3">Mon, Jul 01, 2019</span>
+    <img class="img-responsive nodisplay" src="./Assets/screenshot.png" alt="newsweek">
+    <img class="img-fluid small-head" src="./Assets/Newsweek-300x77.png" alt="newsweek">
+    <div class="pr-3 d-flex justify-content-around"><a class="mr-2 btn-link text-white font-weight-bold nodisplay" href="#">Sign In</a>
+    <button type="button" class="btn-smn btn-link bg-white text-danger rounded-0 border-0 nodisplay mr-2">Subscribe<i class="pl-3 pt-1 fas fa-chevron-right"></i></button>
+    <button class="border-0 bg-orange" type = "button">
+      <span class="text-white"><i
+        class="fas fa-bars fa-1x"></i></span>
+    </button></div>
   </header>
-    <nav class="nav navbar-collapse nav.pills nav-fill navbar-expand-md bg-white d-flex justify-content-between border-bottom">
-        <div class="navbar-collapse collapse"><a href="#" class="nav-item nav-link text-black border-left font-weight-bold">U.S</a>
+
+    <nav class="nodisplay nav nav-pills nav-fill bg-white border-bottom">
+        
+        <a href="#" class="nav-item nav-link text-black border-left font-weight-bold">U.S</a>
         <a href="#" class="nav-item nav-link text-black border-left font-weight-bold">World</a>
         <a href="#" class="nav-item nav-link text-black border-left font-weight-bold">Business</a>
         <a href="#" class="nav-item nav-link text-black border-left font-weight-bold">Tech & Science</a>
@@ -31,15 +38,15 @@
         <form class="nav-item nav-link" action="search">
         <input class="form-control-smn border-0" type="text" name="Search" placeholder="Search">
         <button class="bg-light btn-outline-secondary border-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
-        </form></div>
+        </form>
     </nav>
   
   <main class="container-fluid row pt-2">
-    <section class="content col-lg-3 col-md-6 order-1">
+    <section class="content col-lg-3 col-md-6 order-sm-2 order-md-1">
       <article class="row">
-        <div class="col">
+        <div class="col center-block">
           <h6 class="text-uppercase text-muted">featured stories</h6>
-          <div class="position-relative"><img class="img-fluid" src="./Assets/featured_story.png" alt="featured story">
+          <div class="position-relative"><img class="img-fluid card-img-top" src="./Assets/featured_story.png" alt="featured story">
             <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">analysis</a></div>
           <h5 class="text-black font-weight-bold">Best Business Tools 2019</h5>
           <p class="text-justify">Working with Statista Inc., the globally recognized data research company, Newsweek has
@@ -48,7 +55,7 @@
       </article>
       <article class="row">
         <div class="col border-bottom">
-          <div class="position-relative"><img class="img-fluid" src="./Assets/adude.jpg" alt="featured story">
+          <div class="position-relative"><img class="img-fluid card-img-top" src="./Assets/adude.jpg" alt="featured story">
             <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">politics</a></div>
           <h5 class="text-black font-weight-bold">Republican Lindsey Graham Touts Kamala Harris, Joe Biden as 2020
             Candidates</h5>
@@ -64,7 +71,7 @@
       </article>
       <article class="row">
         <div class="col border-bottom">
-          <div class="position-relative"><img class="img-fluid" src="./Assets/lol.jpg" alt="featured story">
+          <div class="position-relative"><img class="img-fluid card-img-top" src="./Assets/lol.jpg" alt="featured story">
             <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">world</a></div>
           <h5 class="text-black font-weight-bold">Former Intelligence Chief Denies Trump Claim Obama 'Begged' for Kim
             Meeting</h5>
@@ -77,7 +84,7 @@
       </article>
       <article class="row">
         <div class="col border-bottom">
-          <div class="position-relative"><img class="img-fluid" src="./Assets/bidenlolz.png" alt="featured story">
+          <div class="position-relative"><img class="img-fluid card-img-top" src="./Assets/bidenlolz.png" alt="featured story">
             <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">politics</a></div>
           <h5 class="text-black font-weight-bold">Fake Biden Campaign Website Being Run Secretly By Trump Campaign
             Operative</h5>
@@ -91,7 +98,7 @@
       </article>
       <article class="row card mb-5 ml-2">
         <div class="col px-0">
-          <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/liechtenstein-image.jpg"
+          <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/liechtenstein-image.jpg"
               alt="featured story">
             <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold text-info" href="#">sponsored
               insight</a></div>
@@ -105,7 +112,7 @@
       </article>
       <article class="row card ml-2">
         <div class="col px-0">
-          <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/global-business-schools.jpg"
+          <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/global-business-schools.jpg"
               alt="featured story">
             <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold text-info" href="#">sponsored
               insight</a></div>
@@ -118,11 +125,11 @@
         </div>
       </article>
     </section>
-    <div class="col-lg-6 col-md-6 order-2">
+    <div class="col-lg-6 col-md-6 order-lg-2 order-sm-1">
       <section class="content col">
         <h6 class="text-uppercase text-secondary">top story</h6>
         <figure class="border-bottom">
-          <div class="position-relative"><img class="img-fluid" src="./Assets/topstory.jpg" alt="top story">
+          <div class="position-relative"><img class="img-fluid card-img-top" src="./Assets/topstory.jpg" alt="top story">
             <a class="px-2 py-1 bg-light font-weight-bold rounded-0 position-absolute link-onimg" href="#">U.S.</a></div>
           <figcaption>
             <h5 class="text-capitalize font-weight-bold text-black">How harvard caved to students and fired its first
@@ -333,7 +340,7 @@
         </ul>
         <article class="row card mb-5">
           <div class="col px-0">
-            <div class="position-relative card-img-top"><img class="img-fluid"
+            <div class="position-relative card-img-top"><img class="img-fluid card-img-top"
                 src="./Assets/university-southern-california-sol-price-school-public-policy.jpg" alt="featured story">
               <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold text-info" href="#">sponsored
                 insight</a></div>
@@ -355,7 +362,7 @@
         </section>
         <article class="row card mt-5">
           <div class="col px-0">
-            <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/keto.jpg"
+            <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/keto.jpg"
                 alt="featured story">
               <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold text-info" href="#">special
                 edition</a></div>
@@ -380,9 +387,9 @@
         </div>
       </article>
       <div class="col-md-9">
-        <h6 class=" border-bottom text-uppercase text-black roboto d-flex justify-content-center font-weight-bold">in the magazine</h6>
+        <h6 class=" border-bottom text-uppercase text-black roboto d-flex justify-content-center font-weight-bold"><span class="icon-n mr-2"></span>in the magazine</h6>
         <div class="row">
-          <article class="col-md-3 card border-0">
+          <article class="col-md-4 card border-0">
             <img class="img-fluid card-img-top" src="./Assets/dragon_cover.jpg" alt="dragon">
             <div class="card-body">
               <span class="card-text text-uppercase text-white bg-orange font-weight-bold mr-2 px-2 py-1">cover</span>
@@ -391,7 +398,7 @@
                 china great again</h5>
             </div>
           </article>
-          <article class="col-md-3 card border-0">
+          <article class="col-md-4 card border-0">
             <img class="img-fluid card-img-top" src="./Assets/intemag2.jpg" alt="dragon">
             <div class="card-body">
               <span class="card-text text-uppercase text-white bg-orange font-weight-bold mr-2 px-2 py-1">feature</span>
@@ -400,7 +407,7 @@
                 china great again</h5>
             </div>
           </article>
-          <article class="col-md-3 card border-0">
+          <article class="col-md-4 card border-0">
             <img class="img-fluid card-img-top" src="./Assets/intehamg3.jpg" alt="dragon">
             <div class="card-body">
               <span class="card-text text-uppercase text-white bg-orange font-weight-bold mr-2 px-2 py-1">feature</span>
@@ -449,10 +456,10 @@
     </div>
   </section>
   <section class="container-fluid">
-      <h6 class="border-bottom text-uppercase text-black roboto d-flex justify-content-center font-weight-bold">editor's pick</h6>
+      <h6 class="border-bottom text-uppercase text-black roboto d-flex justify-content-center font-weight-bold"><span class="icon-n mr-2"></span>editor's pick</h6>
     <div class="row">
-      <article class="col-3 card border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6 card border-0">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -462,8 +469,8 @@
             else.</p>
         </div>
       </article>
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -473,8 +480,8 @@
             else.</p>
         </div>
       </article>
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6 ">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -484,8 +491,8 @@
             else.</p>
         </div>
       </article>
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -497,8 +504,8 @@
       </article>
     </div>
     <div class="row">
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -508,8 +515,8 @@
             else.</p>
         </div>
       </article>
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -519,8 +526,8 @@
             else.</p>
         </div>
       </article>
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -530,8 +537,8 @@
             else.</p>
         </div>
       </article>
-      <article class="col-3">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/techy.jpg" alt="techy">
+      <article class="col-lg-3 col-md-6">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/techy.jpg" alt="techy">
           <a class="px-2 py-1 link-onimg rounded-0 position-absolute bg-light font-weight-bold" href="#">tech & science</a>
         </div>
         <div class="card-body pl-0">
@@ -544,50 +551,50 @@
     </div>
   </section>
   <section class="container-fluid">
-    <h6 class="border-bottom text-uppercase text-black roboto d-flex justify-content-center font-weight-bold">featured
+    <h6 class="border-bottom text-uppercase text-black roboto d-flex justify-content-center font-weight-bold"><span class="icon-n mr-2"></span>featured
       slideshows</h6>
     <div class="row mb-5">
-      <article class="card col-4 border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/lions-safari.jpg" alt="techy">
+      <article class="card col-md-4 border-0 ">
+        <div class="position-relative card-img-top "><img class="img-fluid card-img-top" src="./Assets/lions-safari.jpg" alt="techy">
           <a class="pb-2 pt-3 px-4 link-onimg rounded-0 position-absolute bg-slideshow font-weight-bold" href="#">11</a>
         </div>
         <h5 class="pt-3 card-title text-black font-weight-bold">How to Survive a Walking Safari in Africa</h5>
       </article>
-      <article class="card col-4 border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg" alt="techy">
+      <article class="card col-md-4 border-0">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg" alt="techy">
           <a class="pb-2 pt-3 px-4 link-onimg rounded-0 position-absolute bg-slideshow font-weight-bold" href="#">11</a>
         </div>
         <h5 class="pt-3 card-title text-black font-weight-bold">10 Queer Rebellions Before Stonewall</h5>
       </article>
-      <article class="card col-4 border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/us-space-rocket-center.jpg" alt="techy">
+      <article class="card col-md-4 border-0">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/us-space-rocket-center.jpg" alt="techy">
           <a class="pb-2 pt-3 px-4 link-onimg rounded-0 position-absolute bg-slideshow font-weight-bold" href="#">11</a>
         </div>
         <h5 class="pt-3 card-title text-black font-weight-bold">One Giant Leap: 5 U.S. Destinations That Helped Put Man on the Moon</h5>
       </article>
     </div>
     <div class="row border-bottom pb-5">
-      <article class="card col-4 border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/papua-new-guinea-diving-5.jpg" alt="techy">
+      <article class="card col-md-4 border-0">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/papua-new-guinea-diving-5.jpg" alt="techy">
           <a class="pb-2 pt-3 px-4 link-onimg rounded-0 position-absolute bg-slideshow font-weight-bold" href="#">11</a>
         </div>
         <h5 class="pt-3 card-title text-black font-weight-bold">Under the Sea: A Diving Bucket List</h5>
       </article>
-      <article class="card col-4 border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/faith-ringgold.jpg" alt="techy">
+      <article class="card col-md-4 border-0">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/faith-ringgold.jpg" alt="techy">
           <a class="pb-2 pt-3 px-4 link-onimg rounded-0 position-absolute bg-slideshow font-weight-bold" href="#">11</a>
         </div>
         <h5 class="pt-3 card-title text-black font-weight-bold">Faith Ringgold Opens Powerful Retrospective in London</h5>
       </article>
-      <article class="card col-4 border-0">
-        <div class="position-relative card-img-top"><img class="img-fluid" src="./Assets/splash-chers-pool.jpg" alt="techy">
+      <article class="card col-md-4 border-0">
+        <div class="position-relative card-img-top"><img class="img-fluid card-img-top" src="./Assets/splash-chers-pool.jpg" alt="techy">
           <a class="pb-2 pt-3 px-4 link-onimg rounded-0 position-absolute bg-slideshow font-weight-bold" href="#">11</a>
         </div>
         <h5 class="pt-3 card-title text-black font-weight-bold">Six Celebrity Pools that are Making a Splash</h5>
       </article>
     </div>
   </section>
-  <section class="border-bottom pb-3 container-fluid">
+  <section class="nodisplay border-bottom pb-3 container-fluid">
     <h4 class=" pt-3 pb-2 text-uppercase text-orange font-weight-bold">tech & science</h4>
     <div class="row">
       <article class="col card border-0">
@@ -625,7 +632,7 @@
       </div>
     </div>
   </section>
-  <section class="border-bottom pb-3 container-fluid">
+  <section class="nodisplay border-bottom pb-3 container-fluid">
     <h4 class=" pt-3 pb-2 text-uppercase text-orange font-weight-bold">u.s.</h4>
     <div class="row">
       <article class="col card border-0">
@@ -663,7 +670,7 @@
       </div>
     </div>
   </section>
-  <section class="border-bottom pb-3 container-fluid">
+  <section class="nodisplay border-bottom pb-3 container-fluid">
     <h4 class=" pt-3 pb-2 text-uppercase text-orange font-weight-bold">culture</h4>
     <div class="row">
       <article class="col card border-0">
@@ -701,7 +708,7 @@
       </div>
     </div>
   </section>
-  <section class="border-bottom pb-3 container-fluid">
+  <section class="nodisplay border-bottom pb-3 container-fluid">
     <h4 class=" pt-3 pb-2 text-uppercase text-orange font-weight-bold">world</h4>
     <div class="row">
       <article class="col card border-0">
@@ -739,7 +746,7 @@
       </div>
     </div>
   </section>
-  <section class="border-bottom pb-3 container-fluid">
+  <section class="nodisplay border-bottom pb-3 container-fluid">
     <h4 class=" pt-3 pb-2 text-uppercase text-orange font-weight-bold">business</h4>
     <div class="row">
       <article class="col card border-0">
@@ -776,7 +783,7 @@
       </div>
     </div>
   </section>
-  <section class="border-bottom pb-3 container-fluid">
+  <section class="nodisplay border-bottom pb-3 container-fluid">
     <h4 class=" pt-3 pb-2 text-uppercase text-orange font-weight-bold">sports</h4>
     <div class="row">
       <article class="col card border-0">
@@ -855,11 +862,11 @@
   </section>
   <footer class="container-fluid">
     <div class="row border-bottom mx-3 pt-5">
-      <div class="col-9">
+      <div class="col-md-9 p-0">
         <img class="img-fluid" src="./Assets/news_footer.png" alt="newsweek">
         <span class="text-muted align-bottom">© 2019 Newsweek</span>
       </div>
-      <ul class="nav col-3 d-flex justify-content-between">
+      <ul class="nav col-md-3 icons">
         <li class="nav-link pl-0 pb-0"><i class="fab fa-facebook-square"></i></li>
         <li class="nav-link pl-0 pb-0"><i class="fab fa-twitter"></i></li>
         <li class="nav-link pl-0 pb-0"><i class="fab fa-instagram"></i></li>
@@ -868,7 +875,7 @@
       </ul>
     </div>
     <div class="row pb-5">
-      <div class="col-7">
+      <div class="col-md-7">
         <ul class="nav nav-pills pt-4">
           <li class="text-muted nav-item border-right px-3">About us</li>
           <li class="text-muted nav-item border-right px-3">Corrections</li>
@@ -884,7 +891,7 @@
           <li class="text-muted nav-item border-right px-3">Consent Preferences</li>
         </ul>
       </div>
-      <div class="col-5 pt-4">
+      <div class="col-md-5 pt-4">
         <ul class="nav nav-pills nav-fill">
           <li class="text-muted nav-item">U.S. Edition</li>
           <li class="text-muted nav-item">日本</li>
